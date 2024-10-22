@@ -11,7 +11,6 @@ public class EventConsumer {
     @KafkaListener(topics = "demoTopic2", groupId = "myConsumerGroup")
     public void consume(Event event) {
         log.info("Message received (kafka event consumer): {}", event);
-
     }
 
 }
